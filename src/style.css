@@ -1,0 +1,27 @@
+body, html {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+main {
+  flex-grow: 1;
+}/*# sourceMappingURL=style.css.map */

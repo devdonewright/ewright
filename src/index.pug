@@ -1,7 +1,21 @@
 doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body 
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Frontend Developer | E. WRight
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous')
+  link(rel="stylesheet", href="../src/style.css")
+include ../src/components/header.pug
+main.home.d-flex.align-items-center.py-4
+    .container
+        .row 
+            .col-12.col-md-6.bg-primary.p-4.rounded 
+                h1 Transforming Ideas into Digital Reality: Crafting Custom Websites and Applications Across Diverse Industries
+                p.lead Blending innovation with expertise in frontend technologies like HTML, CSS and Javascript to deliver tailored solutions that elevate user experiences and drive business success.
+                .row 
+                    .col-6.col-md-5.col-lg-3
+                        a.btn.btn-outline-light.w-100(href="#") View Work 
+                    .col-6.col-md-5.col-lg-3
+                        a.btn.btn-outline-light.w-100(href="#") Contact Me
+
+include ../src/components/footer.pug
